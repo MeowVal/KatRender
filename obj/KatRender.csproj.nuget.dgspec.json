@@ -44,13 +44,45 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Ahwoo.BRUTAL.Concurrency": {
+              "target": "Package",
+              "version": "[2026.10.2, )"
+            },
             "Ahwoo.BRUTAL.Core": {
               "target": "Package",
               "version": "[2026.10.4, )"
             },
-            "Ahwoo.Brutal.Glfw": {
+            "Ahwoo.BRUTAL.Fmod": {
+              "target": "Package",
+              "version": "[2026.10.4, )"
+            },
+            "Ahwoo.BRUTAL.Glfw": {
               "target": "Package",
               "version": "[2026.10.5, )"
+            },
+            "Ahwoo.BRUTAL.ImPlot": {
+              "target": "Package",
+              "version": "[2026.10.3, )"
+            },
+            "Ahwoo.BRUTAL.RakNet": {
+              "target": "Package",
+              "version": "[2026.10.3, )"
+            },
+            "Ahwoo.BRUTAL.ShaderC": {
+              "target": "Package",
+              "version": "[2026.10.3, )"
+            },
+            "Ahwoo.BRUTAL.Vulkan.Abstractions": {
+              "target": "Package",
+              "version": "[2026.10.3, )"
+            },
+            "Ahwoo.BRUTAL.Vulkan.Vma": {
+              "target": "Package",
+              "version": "[2026.10.3, )"
+            },
+            "Ahwoo.Brutal.ImGui": {
+              "target": "Package",
+              "version": "[2026.10.3, )"
             }
           },
           "imports": [

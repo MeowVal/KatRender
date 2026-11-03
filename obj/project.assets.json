@@ -20,6 +20,19 @@
           }
         }
       },
+      "Ahwoo.BRUTAL.Concurrency/2026.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Brutal.Concurrency.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Concurrency.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Ahwoo.BRUTAL.Core/2026.10.4": {
         "type": "package",
         "dependencies": {
@@ -34,6 +47,25 @@
         },
         "runtime": {
           "lib/net10.0/Brutal.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Fmod/2026.10.4": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Core": "2026.10.4",
+          "Ahwoo.BRUTAL.Interop": "2026.10.2",
+          "Ahwoo.BRUTAL.Numerics": "2026.10.2",
+          "Ahwoo.BRUTAL.Strings": "2026.10.2"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.Fmod.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Fmod.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -87,6 +119,115 @@
           "runtimes/win-x64/native/glfw3.dll": {
             "assetType": "native",
             "rid": "win-x64"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.ImGui/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Core": "2026.10.4",
+          "Ahwoo.BRUTAL.ImGui.Native": "2026.10.3",
+          "Ahwoo.BRUTAL.Localization": "2026.10.3",
+          "Ahwoo.BRUTAL.Memory": "2026.10.2",
+          "Ahwoo.BRUTAL.Numerics": "2026.10.2",
+          "Ahwoo.BRUTAL.Strings": "2026.10.2",
+          "CommunityToolkit.HighPerformance": "8.4.2"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.ImGui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.ImGui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.ImGui.Native/2026.10.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libimgui.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libimgui.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/win-x64/native/imgui.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.ImPlot/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.ImGui": "2026.10.3",
+          "Ahwoo.BRUTAL.ImPlot.Native": "2026.10.3"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.ImPlot.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.ImPlot.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.ImPlot.Native/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.ImGui.Native": "2026.10.3"
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libimplot.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libimplot.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/win-x64/native/implot.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Interop/2026.10.2": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Core": "2026.10.4"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.Interop.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Interop.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Localization/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Core": "2026.10.4",
+          "Ahwoo.BRUTAL.Logging": "2026.10.3"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.Localization.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Localization.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -146,6 +287,99 @@
           }
         }
       },
+      "Ahwoo.BRUTAL.RakNet/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Core": "2026.10.4",
+          "Ahwoo.BRUTAL.Interop": "2026.10.2",
+          "Ahwoo.BRUTAL.RakNet.Native": "2026.10.3",
+          "Ahwoo.BRUTAL.Strings": "2026.10.2",
+          "CommunityToolkit.HighPerformance": "8.4.2"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.RakNet.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.RakNet.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.RakNet.Native/2026.10.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libRakNetDLL.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libRakNetDLL.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/win-x64/native/RakNetDLL.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.ShaderC/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Interop": "2026.10.2",
+          "Ahwoo.BRUTAL.Memory": "2026.10.2",
+          "Ahwoo.BRUTAL.ShaderC.Native": "2026.10.3",
+          "Ahwoo.BRUTAL.Strings": "2026.10.2"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.ShaderC.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.ShaderC.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.ShaderC.Native/2026.10.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSPIRV-Tools-shared.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libshaderc_shared.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libshaderc_shared.so.1": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libSPIRV-Tools-shared.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-arm64/native/libshaderc_shared.1.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-arm64/native/libshaderc_shared.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/win-x64/native/SPIRV-Tools-shared.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/shaderc_shared.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
       "Ahwoo.BRUTAL.Strings/2026.10.2": {
         "type": "package",
         "dependencies": {
@@ -165,6 +399,100 @@
         "runtime": {
           "lib/net10.0/Brutal.Strings.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Vulkan/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Core": "2026.10.4",
+          "Ahwoo.BRUTAL.Logging": "2026.10.3",
+          "Ahwoo.BRUTAL.Memory": "2026.10.2",
+          "Ahwoo.BRUTAL.Numerics": "2026.10.2",
+          "Ahwoo.BRUTAL.Strings": "2026.10.2",
+          "Ahwoo.BRUTAL.Vulkan.Native": "2026.10.3"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.Vulkan.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Vulkan.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Vulkan.Abstractions/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Collections": "2026.10.2",
+          "Ahwoo.BRUTAL.Logging": "2026.10.3",
+          "Ahwoo.BRUTAL.Memory": "2026.10.2",
+          "Ahwoo.BRUTAL.Numerics": "2026.10.2",
+          "Ahwoo.BRUTAL.Strings": "2026.10.2",
+          "Ahwoo.BRUTAL.Vulkan": "2026.10.3"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.Vulkan.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Vulkan.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Vulkan.Native/2026.10.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libVulkanEx.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libVulkanEx.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/win-x64/native/VulkanEx.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Vulkan.Vma/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Vulkan": "2026.10.3",
+          "Ahwoo.BRUTAL.Vulkan.Abstractions": "2026.10.3",
+          "Ahwoo.BRUTAL.Vulkan.Vma.Native": "2026.10.3"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.Vulkan.Vma.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Vulkan.Vma.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ahwoo.BRUTAL.Vulkan.Vma.Native/2026.10.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libvma.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libvma.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/win-x64/native/vma.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
           }
         }
       },
@@ -458,6 +786,25 @@
         "lib/net10.0/Brutal.Collections.xml"
       ]
     },
+    "Ahwoo.BRUTAL.Concurrency/2026.10.2": {
+      "sha512": "GKntNywsIU/EzmNf55FOHIDxGgrBlFVBMI7JUX7Bs/obI3CtJhii3rnLvjN6L+LWwz3N8C6RH8KyxcUREyPpsg==",
+      "type": "package",
+      "path": "ahwoo.brutal.concurrency/2026.10.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.concurrency.2026.10.2.nupkg.sha512",
+        "ahwoo.brutal.concurrency.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Concurrency.dll",
+        "lib/net10.0/Brutal.Concurrency.pdb",
+        "lib/net10.0/Brutal.Concurrency.xml"
+      ]
+    },
     "Ahwoo.BRUTAL.Core/2026.10.4": {
       "sha512": "7fAX/NyQIWtxP8b6bU6yBeN5lcbjVvhxFgVCanD4LYaGJzuhAA2/GDaOWiw1or7lJmddlAZgfuhqHaUOR33s4Q==",
       "type": "package",
@@ -478,6 +825,26 @@
         "lib/net10.0/Brutal.Core.dll",
         "lib/net10.0/Brutal.Core.pdb",
         "lib/net10.0/Brutal.Core.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.Fmod/2026.10.4": {
+      "sha512": "VbSbeCO9NZxtpHYhqAYRQaAcpur+WhiHMG4w6yMK6XXeI3ERwOkZfu3mGo1PK+U+PEjZSyszOJegNVA6mX1j5g==",
+      "type": "package",
+      "path": "ahwoo.brutal.fmod/2026.10.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-FMOD-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.fmod.2026.10.4.nupkg.sha512",
+        "ahwoo.brutal.fmod.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Fmod.dll",
+        "lib/net10.0/Brutal.Fmod.pdb",
+        "lib/net10.0/Brutal.Fmod.xml"
       ]
     },
     "Ahwoo.BRUTAL.Glfw/2026.10.5": {
@@ -523,6 +890,128 @@
         "runtimes/osx-arm64/native/libglfw.3.dylib",
         "runtimes/osx-arm64/native/libglfw.dylib",
         "runtimes/win-x64/native/glfw3.dll"
+      ]
+    },
+    "Ahwoo.BRUTAL.ImGui/2026.10.3": {
+      "sha512": "USCy09GwYrVpfHZFiLftdCnzFiSzeNg618OV2MIADBlf72oNJ3I3M7XEPXCfqXHWx+QR8hn3jXoGkc13knmbFw==",
+      "type": "package",
+      "path": "ahwoo.brutal.imgui/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-IMGUI-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.imgui.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.imgui.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.ImGui.dll",
+        "lib/net10.0/Brutal.ImGui.pdb",
+        "lib/net10.0/Brutal.ImGui.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.ImGui.Native/2026.10.3": {
+      "sha512": "O2Zyy6T7Rg1Qa53zLIQ8n/IkpBeyb+fAAnUQZ8EeZhmwiIU4ssdSAPOCQJogZiMqLvF3NB6BcjpJERwS4H8b/w==",
+      "type": "package",
+      "path": "ahwoo.brutal.imgui.native/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-IMGUI-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.imgui.native.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.imgui.native.nuspec",
+        "brutal-icon-32px.png",
+        "build/natives/lib/win-x64/imgui.lib",
+        "runtimes/linux-x64/native/libimgui.so",
+        "runtimes/osx-arm64/native/libimgui.dylib",
+        "runtimes/win-x64/native/imgui.dll"
+      ]
+    },
+    "Ahwoo.BRUTAL.ImPlot/2026.10.3": {
+      "sha512": "25JVd4ZAiGP4HQqECBdaxluxcLieX59JzfawFneIXMnYxqF/PwA6JjHnNw+gBnsaEPdLtwoodzEsn2xQk7xmsg==",
+      "type": "package",
+      "path": "ahwoo.brutal.implot/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-IMGUI-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.implot.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.implot.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.ImPlot.dll",
+        "lib/net10.0/Brutal.ImPlot.pdb",
+        "lib/net10.0/Brutal.ImPlot.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.ImPlot.Native/2026.10.3": {
+      "sha512": "2DZcul/QCwrWpw2glLBrftOG62a6l+pq3b+tdiE3x1H0zrLqVzGPuzJto8zcZSHYCJq76yVBj5jy/pXVwX81Yg==",
+      "type": "package",
+      "path": "ahwoo.brutal.implot.native/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-IMGUI-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.implot.native.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.implot.native.nuspec",
+        "brutal-icon-32px.png",
+        "build/natives/lib/win-x64/implot.lib",
+        "runtimes/linux-x64/native/libimplot.so",
+        "runtimes/osx-arm64/native/libimplot.dylib",
+        "runtimes/win-x64/native/implot.dll"
+      ]
+    },
+    "Ahwoo.BRUTAL.Interop/2026.10.2": {
+      "sha512": "zkw974UmzSw35DpsPcqttmE4JsvqFrMfweQ0TiKDchtjAFSK1W1BDUrSJm6Xd73gz7YiqSBW533D5S4EOLH4Hw==",
+      "type": "package",
+      "path": "ahwoo.brutal.interop/2026.10.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.interop.2026.10.2.nupkg.sha512",
+        "ahwoo.brutal.interop.nuspec",
+        "analyzers/dotnet/cs/Brutal.Interop.SourceGenerators.dll",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Interop.dll",
+        "lib/net10.0/Brutal.Interop.pdb",
+        "lib/net10.0/Brutal.Interop.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.Localization/2026.10.3": {
+      "sha512": "sK6FmyAXwSxrvvHfYTe10TnKoJBMl72EdzqjmKJteiQ2XTUrclZ1nkiVolk/JvBltlaQH4HhiP7b3L3zvWbqkw==",
+      "type": "package",
+      "path": "ahwoo.brutal.localization/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-LOCALIZATION-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.localization.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.localization.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Localization.dll",
+        "lib/net10.0/Brutal.Localization.pdb",
+        "lib/net10.0/Brutal.Localization.xml"
       ]
     },
     "Ahwoo.BRUTAL.Logging/2026.10.3": {
@@ -584,6 +1073,94 @@
         "lib/net10.0/Brutal.Numerics.xml"
       ]
     },
+    "Ahwoo.BRUTAL.RakNet/2026.10.3": {
+      "sha512": "ATSz1c3nqA8biJ1DfNm8q0Al+gN5pARtMwehW0wWkb313OuSiDcfwz5cakTvo75NdykVDgyIUVl3R34XPiAFpg==",
+      "type": "package",
+      "path": "ahwoo.brutal.raknet/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-RAKNET-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.raknet.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.raknet.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.RakNet.dll",
+        "lib/net10.0/Brutal.RakNet.pdb",
+        "lib/net10.0/Brutal.RakNet.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.RakNet.Native/2026.10.3": {
+      "sha512": "BSDYPPheQLZ17ZMWw7VFxU+pEt+sQQ0U7qc4aq2QG6VIynKIw0/CK4T/J+u7kngmRsNl/ol39wHqZ2CuoaWF5A==",
+      "type": "package",
+      "path": "ahwoo.brutal.raknet.native/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-RAKNET-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.raknet.native.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.raknet.native.nuspec",
+        "brutal-icon-32px.png",
+        "build/natives/lib/win-x64/RakNetDLL.lib",
+        "runtimes/linux-x64/native/libRakNetDLL.so",
+        "runtimes/osx-arm64/native/libRakNetDLL.dylib",
+        "runtimes/win-x64/native/RakNetDLL.dll"
+      ]
+    },
+    "Ahwoo.BRUTAL.ShaderC/2026.10.3": {
+      "sha512": "8WdUr2TQpiMz78ag8WVelUV5fRrREZqB7T15WyEgCyNGbEw0iyjg9pexibx2NUEdEiDwGf0dn91GSSbeWVxdSQ==",
+      "type": "package",
+      "path": "ahwoo.brutal.shaderc/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-SHADERC-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.shaderc.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.shaderc.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.ShaderC.dll",
+        "lib/net10.0/Brutal.ShaderC.pdb",
+        "lib/net10.0/Brutal.ShaderC.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.ShaderC.Native/2026.10.3": {
+      "sha512": "mJgkbVx+Jodj9VCGzEn8FyuUkCTfrR7BwxDONB3V3ORO5NjOld6qqlplOx59xaE4cc3q3JM/wQY+7i+u1xRi/g==",
+      "type": "package",
+      "path": "ahwoo.brutal.shaderc.native/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-SHADERC-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.shaderc.native.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.shaderc.native.nuspec",
+        "brutal-icon-32px.png",
+        "build/natives/lib/win-x64/SPIRV-Tools-shared.lib",
+        "build/natives/lib/win-x64/shaderc_shared.lib",
+        "runtimes/linux-x64/native/libSPIRV-Tools-shared.so",
+        "runtimes/linux-x64/native/libshaderc_shared.so",
+        "runtimes/linux-x64/native/libshaderc_shared.so.1",
+        "runtimes/osx-arm64/native/libSPIRV-Tools-shared.dylib",
+        "runtimes/osx-arm64/native/libshaderc_shared.1.dylib",
+        "runtimes/osx-arm64/native/libshaderc_shared.dylib",
+        "runtimes/win-x64/native/SPIRV-Tools-shared.dll",
+        "runtimes/win-x64/native/shaderc_shared.dll"
+      ]
+    },
     "Ahwoo.BRUTAL.Strings/2026.10.2": {
       "sha512": "fbFYcIhiWX1X5rwQKWxySJH6Y52R+ZRjN5LQ6PrDHJ7rHm/T7w68+B80laZDgWIQl9CovQkBhOXlLwshtL3Lrw==",
       "type": "package",
@@ -603,6 +1180,108 @@
         "lib/net10.0/Brutal.Strings.dll",
         "lib/net10.0/Brutal.Strings.pdb",
         "lib/net10.0/Brutal.Strings.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.Vulkan/2026.10.3": {
+      "sha512": "TzZBecLi83ym93HO5TG12rwDN2EMcELwLqy3A8WQWc8Oq/ElGYQrKQBdShmZkHq/cAsVjO1A9H8Avex4YZMHrg==",
+      "type": "package",
+      "path": "ahwoo.brutal.vulkan/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-VULKAN-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.vulkan.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.vulkan.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Vulkan.dll",
+        "lib/net10.0/Brutal.Vulkan.pdb",
+        "lib/net10.0/Brutal.Vulkan.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.Vulkan.Abstractions/2026.10.3": {
+      "sha512": "9XF+fDjzn087ws6xIUTYB32mPC2sUj2EG8139eYuNN1PAF4hCAhVxvlko22nJalpgKxk5+FiiA85yV7SQntTKA==",
+      "type": "package",
+      "path": "ahwoo.brutal.vulkan.abstractions/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-VULKAN-ABSTRACTIONS-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.vulkan.abstractions.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.vulkan.abstractions.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Vulkan.Abstractions.dll",
+        "lib/net10.0/Brutal.Vulkan.Abstractions.pdb",
+        "lib/net10.0/Brutal.Vulkan.Abstractions.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.Vulkan.Native/2026.10.3": {
+      "sha512": "dq55Wj4DxR8I8MfUzTvjztut/Lgy7bs3uNRg2U+bH8wQMP6NFrhv6/c3Dprq7pfSWTomczk3Ud694hZruWRlNA==",
+      "type": "package",
+      "path": "ahwoo.brutal.vulkan.native/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-VULKAN-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.vulkan.native.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.vulkan.native.nuspec",
+        "brutal-icon-32px.png",
+        "build/natives/lib/win-x64/VulkanEx.lib",
+        "runtimes/linux-x64/native/libVulkanEx.so",
+        "runtimes/osx-arm64/native/libVulkanEx.dylib",
+        "runtimes/win-x64/native/VulkanEx.dll"
+      ]
+    },
+    "Ahwoo.BRUTAL.Vulkan.Vma/2026.10.3": {
+      "sha512": "drha5c+uWXuywbRDYnMaHOM6sAk2q/A1JRCRgiWFF+o2CTlp206/XTtw9q0+qQAiXqJzqkiE1obbleZ5/VlO3w==",
+      "type": "package",
+      "path": "ahwoo.brutal.vulkan.vma/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-VULKAN-VMA-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.vulkan.vma.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.vulkan.vma.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Vulkan.Vma.dll",
+        "lib/net10.0/Brutal.Vulkan.Vma.pdb",
+        "lib/net10.0/Brutal.Vulkan.Vma.xml"
+      ]
+    },
+    "Ahwoo.BRUTAL.Vulkan.Vma.Native/2026.10.3": {
+      "sha512": "yKXxY9jG/IElufFYobNh3ePj+s6TXY8ks5LZ8ClIjtB+mrV2Oy8gN1/XF+elb3r43nziTIPwFeYcHsPTxCdHow==",
+      "type": "package",
+      "path": "ahwoo.brutal.vulkan.vma.native/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "LICENSES/BRUTAL-VULKAN-VMA-THIRD-PARTY-NOTICES.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.vulkan.vma.native.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.vulkan.vma.native.nuspec",
+        "brutal-icon-32px.png",
+        "build/natives/lib/win-x64/vma.lib",
+        "runtimes/linux-x64/native/libvma.so",
+        "runtimes/osx-arm64/native/libvma.dylib",
+        "runtimes/win-x64/native/vma.dll"
       ]
     },
     "CommunityToolkit.HighPerformance/8.4.2": {
@@ -1071,8 +1750,16 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Ahwoo.BRUTAL.Concurrency >= 2026.10.2",
       "Ahwoo.BRUTAL.Core >= 2026.10.4",
-      "Ahwoo.Brutal.Glfw >= 2026.10.5"
+      "Ahwoo.BRUTAL.Fmod >= 2026.10.4",
+      "Ahwoo.BRUTAL.Glfw >= 2026.10.5",
+      "Ahwoo.BRUTAL.ImPlot >= 2026.10.3",
+      "Ahwoo.BRUTAL.RakNet >= 2026.10.3",
+      "Ahwoo.BRUTAL.ShaderC >= 2026.10.3",
+      "Ahwoo.BRUTAL.Vulkan.Abstractions >= 2026.10.3",
+      "Ahwoo.BRUTAL.Vulkan.Vma >= 2026.10.3",
+      "Ahwoo.Brutal.ImGui >= 2026.10.3"
     ]
   },
   "packageFolders": {
@@ -1118,13 +1805,45 @@
       "net10.0": {
         "targetAlias": "net10.0",
         "dependencies": {
+          "Ahwoo.BRUTAL.Concurrency": {
+            "target": "Package",
+            "version": "[2026.10.2, )"
+          },
           "Ahwoo.BRUTAL.Core": {
             "target": "Package",
             "version": "[2026.10.4, )"
           },
-          "Ahwoo.Brutal.Glfw": {
+          "Ahwoo.BRUTAL.Fmod": {
+            "target": "Package",
+            "version": "[2026.10.4, )"
+          },
+          "Ahwoo.BRUTAL.Glfw": {
             "target": "Package",
             "version": "[2026.10.5, )"
+          },
+          "Ahwoo.BRUTAL.ImPlot": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
+          "Ahwoo.BRUTAL.RakNet": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
+          "Ahwoo.BRUTAL.ShaderC": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
+          "Ahwoo.BRUTAL.Vulkan.Abstractions": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
+          "Ahwoo.BRUTAL.Vulkan.Vma": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
+          "Ahwoo.Brutal.ImGui": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
           }
         },
         "imports": [
