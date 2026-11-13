@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "782wNJJgpqk=",
+  "dgSpecHash": "z2MpA0yfG5k=",
   "success": true,
   "projectFilePath": "/home/meowval/Projects/KatRender/KatRender.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "/home/meowval/.nuget/packages/ahwoo.brutal.interop/2026.10.2/ahwoo.brutal.interop.2026.10.2.nupkg.sha512",
     "/home/meowval/.nuget/packages/ahwoo.brutal.localization/2026.10.3/ahwoo.brutal.localization.2026.10.3.nupkg.sha512",
     "/home/meowval/.nuget/packages/ahwoo.brutal.logging/2026.10.3/ahwoo.brutal.logging.2026.10.3.nupkg.sha512",
+    "/home/meowval/.nuget/packages/ahwoo.brutal.maths/2026.10.3/ahwoo.brutal.maths.2026.10.3.nupkg.sha512",
     "/home/meowval/.nuget/packages/ahwoo.brutal.memory/2026.10.2/ahwoo.brutal.memory.2026.10.2.nupkg.sha512",
     "/home/meowval/.nuget/packages/ahwoo.brutal.numerics/2026.10.2/ahwoo.brutal.numerics.2026.10.2.nupkg.sha512",
     "/home/meowval/.nuget/packages/ahwoo.brutal.raknet/2026.10.3/ahwoo.brutal.raknet.2026.10.3.nupkg.sha512",

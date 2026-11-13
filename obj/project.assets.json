@@ -250,6 +250,22 @@
           }
         }
       },
+      "Ahwoo.BRUTAL.Maths/2026.10.3": {
+        "type": "package",
+        "dependencies": {
+          "Ahwoo.BRUTAL.Numerics": "2026.10.2"
+        },
+        "compile": {
+          "lib/net10.0/Brutal.Maths.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Brutal.Maths.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Ahwoo.BRUTAL.Memory/2026.10.2": {
         "type": "package",
         "dependencies": {
@@ -1033,6 +1049,25 @@
         "lib/net10.0/Brutal.Logging.xml"
       ]
     },
+    "Ahwoo.BRUTAL.Maths/2026.10.3": {
+      "sha512": "fujdQvrtajZie3I+nTl3jBTWOfuOhnb+cBbNdKOaq6h9czvaUQyVqhlhcVPdQCRt4KslV53Mx0oVEghAodj3hg==",
+      "type": "package",
+      "path": "ahwoo.brutal.maths/2026.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONTRIBUTORS.md",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "README.md",
+        "ahwoo.brutal.maths.2026.10.3.nupkg.sha512",
+        "ahwoo.brutal.maths.nuspec",
+        "brutal-icon-32px.png",
+        "lib/net10.0/Brutal.Maths.dll",
+        "lib/net10.0/Brutal.Maths.pdb",
+        "lib/net10.0/Brutal.Maths.xml"
+      ]
+    },
     "Ahwoo.BRUTAL.Memory/2026.10.2": {
       "sha512": "kOzj5ungJ9f1SeofvKv2rGocIrqmB21hXBWS9Ekq1y+XthNrKlgkU555jYbnkqssnq+XGX11q8qK+GGbIGJQ3Q==",
       "type": "package",
@@ -1754,12 +1789,15 @@
       "Ahwoo.BRUTAL.Core >= 2026.10.4",
       "Ahwoo.BRUTAL.Fmod >= 2026.10.4",
       "Ahwoo.BRUTAL.Glfw >= 2026.10.5",
+      "Ahwoo.BRUTAL.ImGui >= 2026.10.3",
       "Ahwoo.BRUTAL.ImPlot >= 2026.10.3",
+      "Ahwoo.BRUTAL.Maths >= 2026.10.3",
+      "Ahwoo.BRUTAL.Numerics >= 2026.10.2",
       "Ahwoo.BRUTAL.RakNet >= 2026.10.3",
       "Ahwoo.BRUTAL.ShaderC >= 2026.10.3",
+      "Ahwoo.BRUTAL.Vulkan >= 2026.10.3",
       "Ahwoo.BRUTAL.Vulkan.Abstractions >= 2026.10.3",
-      "Ahwoo.BRUTAL.Vulkan.Vma >= 2026.10.3",
-      "Ahwoo.Brutal.ImGui >= 2026.10.3"
+      "Ahwoo.BRUTAL.Vulkan.Vma >= 2026.10.3"
     ]
   },
   "packageFolders": {
@@ -1785,6 +1823,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -1803,6 +1842,7 @@
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Ahwoo.BRUTAL.Concurrency": {
@@ -1821,9 +1861,21 @@
             "target": "Package",
             "version": "[2026.10.5, )"
           },
+          "Ahwoo.BRUTAL.ImGui": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
           "Ahwoo.BRUTAL.ImPlot": {
             "target": "Package",
             "version": "[2026.10.3, )"
+          },
+          "Ahwoo.BRUTAL.Maths": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
+          "Ahwoo.BRUTAL.Numerics": {
+            "target": "Package",
+            "version": "[2026.10.2, )"
           },
           "Ahwoo.BRUTAL.RakNet": {
             "target": "Package",
@@ -1833,15 +1885,15 @@
             "target": "Package",
             "version": "[2026.10.3, )"
           },
+          "Ahwoo.BRUTAL.Vulkan": {
+            "target": "Package",
+            "version": "[2026.10.3, )"
+          },
           "Ahwoo.BRUTAL.Vulkan.Abstractions": {
             "target": "Package",
             "version": "[2026.10.3, )"
           },
           "Ahwoo.BRUTAL.Vulkan.Vma": {
-            "target": "Package",
-            "version": "[2026.10.3, )"
-          },
-          "Ahwoo.Brutal.ImGui": {
             "target": "Package",
             "version": "[2026.10.3, )"
           }
